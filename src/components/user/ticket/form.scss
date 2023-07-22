@@ -1,0 +1,44 @@
+@use "../../../assets/scss/variables" as v;
+@use "../../../assets/scss/mixins" as m;
+
+.checkoutForm {
+  .form1 {
+    height: 245px;
+    margin-bottom: 1rem;
+
+    p {
+      color: v.$color13;
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  .form2 {
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .cart-date-cvc {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .checkout-btn {
+    width: 100%;
+
+    button {
+      width: 100%;
+      border: 2px solid v.$color9;
+      background-color: v.$color5;
+      color: v.$color9;
+      border-radius: 0;
+
+      &:hover {
+        color: v.$color5;
+        background-color: v.$color9;
+        border-color: v.$color9;
+      }
+    }
+  }
+}

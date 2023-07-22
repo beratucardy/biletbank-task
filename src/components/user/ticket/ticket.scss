@@ -1,0 +1,31 @@
+@use "../../../assets/scss/variables" as v;
+@use "../../../assets/scss/mixins" as m;
+
+.ticket {
+  .btn {
+    border: 2px solid v.$color8;
+    background-color: v.$color5;
+    color: v.$color8;
+    border-radius: 0;
+    margin-top: 1rem;
+
+    &:hover {
+      color: v.$color5;
+      background-color: v.$color8;
+      border-color: v.$color8;
+    }
+  }
+
+  .check {
+    border: 2px solid v.$color9;
+    background-color: v.$color5;
+    color: v.$color9;
+    border-radius: 0;
+
+    &:hover {
+      color: v.$color5;
+      background-color: v.$color9;
+      border-color: v.$color9;
+    }
+  }
+}

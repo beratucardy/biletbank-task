@@ -1,0 +1,23 @@
+{
+  "home": "HOME",
+  "corporate": "CORPORATE",
+  "corporateProfile": "Corporate Profile",
+  "briefHistory": "Brief History",
+  "newsAndAnnouncements": "News and Announcements",
+  "products": "PRODUCTS",
+  "services": "SERVICES",
+  "rdCenter": "R&D CENTER",
+  "about": "About",
+  "academicStudies": "Academic Studies",
+  "careers": "CAREERS",
+  "contact": "CONTACT US",
+  "register": "REGISTER",
+  "login": "LOGIN",
+  "from": "From",
+  "to": "To",
+  "select": "Select",
+  "checkAvailability": "Check Availability",
+  "bookNow": "Book Now",
+  "contactInformation": "Contact Information",
+  "checkout": "CHECKOUT"
+}

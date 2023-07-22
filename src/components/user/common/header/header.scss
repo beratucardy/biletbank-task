@@ -1,0 +1,136 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+div.header {
+  height: 95px;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  nav.navbar {
+    div.navbar-collapse {
+      div.navbar-nav {
+        @include m.flexbox(row, center, center);
+
+        @media (max-width: 1200px) {
+          @include m.flexbox(column);
+        }
+
+        .divider {
+          width: 1px;
+          background-color: v.$color7;
+          margin-right: 10px;
+        }
+
+        a {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 25px;
+          color: v.$color1;
+
+          &.lang {
+            margin-right: 6px;
+            padding-left: 3px;
+            color: v.$color19;
+
+            &:hover {
+              color: v.$color19;
+            }
+          }
+
+          &:hover {
+            color: v.$color2;
+          }
+
+          &.active {
+            color: v.$color2;
+          }
+
+          &::after {
+            display: none;
+
+            @media (max-width: 1200px) {
+              display: inline;
+              position: absolute;
+              top: 18px;
+            }
+          }
+        }
+
+        div.dropdown {
+          &:hover {
+            .dropdown-menu {
+              display: block;
+            }
+          }
+
+          .dropdown-menu {
+            padding: 0;
+            background-color: v.$color4;
+            border: 0;
+            border-radius: 0;
+
+            .dropdown-item {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              padding: 15px 30px 15px 27px;
+              border-top: 1px solid v.$color6;
+
+              &:hover {
+                color: v.$color3;
+                background-color: v.$color5;
+              }
+            }
+          }
+        }
+        .auth {
+          @include m.flexbox(row, center, center);
+
+          .btn {
+            &:nth-last-child(2) {
+              border: 2px solid v.$color8;
+              background-color: v.$color5;
+              color: v.$color8;
+              margin-right: 10px;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 25px;
+              border-radius: 0;
+              padding: 0 10px;
+              height: 25px;
+              @include m.flexbox(row, center, center);
+
+              &:hover {
+                color: v.$color5;
+                background-color: v.$color8;
+                border-color: v.$color8;
+              }
+            }
+
+            &:nth-last-child(1) {
+              border: 2px solid v.$color9;
+              background-color: v.$color5;
+              color: v.$color9;
+              margin-right: 10px;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 25px;
+              border-radius: 0;
+              padding: 0 10px;
+              height: 25px;
+              @include m.flexbox(row, center, center);
+
+              &:hover {
+                color: v.$color5;
+                background-color: v.$color9;
+                border-color: v.$color9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@use "../../../../assets/scss/variables" as v;
+@use "../../../../assets/scss/mixins" as m;
+
+footer {
+  div.footer-top {
+    background-color: v.$color10;
+    padding: 60px 115.5px 45px 115.5px;
+
+    @media (max-width: 768px) {
+      padding: 60px 0 45px 0;
+    }
+
+    .col-lg-4 {
+      &:nth-last-child(3) {
+        padding-right: 30px;
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        @include m.flexbox(row, flex-start, flex-start, 1rem);
+
+        a {
+          text-decoration: none;
+          font-family: "Roboto";
+          line-height: 25px;
+          white-space: nowrap;
+        }
+
+        p {
+          color: v.$color11;
+          line-height: 25px;
+          font-family: "Roboto";
+        }
+
+        &:nth-last-child(1) {
+          margin-bottom: 12px;
+
+          a {
+            color: v.$color12;
+          }
+
+          svg {
+            color: v.$color11;
+            min-width: 25px;
+            min-height: 25px;
+          }
+        }
+
+        &:nth-last-child(2) {
+          margin-bottom: 12px;
+
+          a {
+            color: v.$color11;
+          }
+
+          svg {
+            color: v.$color11;
+            margin-top: 3px;
+            margin-left: 2px;
+            margin-right: 4px;
+          }
+        }
+
+        &:nth-last-child(3) {
+          svg {
+            min-width: 25px;
+            min-height: 48px;
+            padding-bottom: 17px;
+            color: v.$color11;
+          }
+        }
+      }
+    }
+  }
+
+  div.footer-bottom {
+    font-size: 13.6px;
+    line-height: 23px;
+    font-family: "Roboto";
+    background-color: v.$color13;
+    padding: 40px 0 35px 0;
+
+    div.footer-bottom-f {
+      @include m.flexbox(row, space-between);
+
+      @media (max-width: 992px) {
+        @include m.flexbox(column, flex-start, flex-start, 22px);
+      }
+
+      svg {
+        color: v.$color14;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        margin: 0 5px;
+      }
+
+      p {
+        color: v.$color11;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+
+        &:nth-last-child(4) {
+            svg {
+                &:hover {
+                    color: v.$color15;
+                }
+            }
+        }
+
+        &:nth-last-child(3) {
+            svg {
+                &:hover {
+                    color: v.$color16;
+                }
+            }
+        }
+
+        &:nth-last-child(2) {
+            svg {
+                &:hover {
+                    color: v.$color17;
+                }
+            }
+        }
+
+        &:nth-last-child(1) {
+            svg {
+                &:hover {
+                    color: v.$color18;
+                }
+            }
+        }
+      }
+    }
+  }
+}
